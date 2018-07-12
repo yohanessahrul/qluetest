@@ -20,6 +20,18 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <!-- CDNJS, production (minified) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-leaflet/2.0.0/react-leaflet.min.js"></script>
+    <!-- CDNJS, development -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-leaflet/2.0.0/react-leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <style>
+      .leaflet-container {
+        height: 500px;
+        width: 80%;
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
     <noscript>
