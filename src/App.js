@@ -6,6 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Qlue Test</h1>
         <Map />
       </div>
     );
