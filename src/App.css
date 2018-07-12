@@ -27,16 +27,110 @@
   to { transform: rotate(360deg); }
 }
 
+.clear {
+  clear: both;
+}
+
+.mapWrapper {
+  display: table;
+  width: 100%;
+  height: 560px;
+  border: thin solid teal;
+  margin: none;
+  padding: none;
+  background: rgb(224, 236, 247);
+}
 /* popup color */
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
-  max-width: 500px;
-  min-width: 200px;
+  max-width: 400px;
+  min-width: 400px;
   /* background: yellow; */
 }
 
 .tag1 {
-  background: red;
   padding: 5px;
-  color: white;
   font-weight: bold;
+}
+
+.popupMarker {
+  margin-top: 20px !important;
+  background: rgb(130, 133, 133);
+  width: 358px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 5px 5px 0px 0px;
+  position: relative;
+}
+.popupMarker > img {
+  width: 100%;
+  margin-top: -10% !important;
+  /* height: 100%; */
+  display: table;
+  margin: 0 auto;
+}
+.userWrap {
+  position: absolute;
+  top: 0;
+}
+.userWrap > p {
+  font-size: 14px;
+  font-weight: none;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 3px 7px;
+  background: white;
+  -webkit-box-shadow: 1px 1px 3px 1px #6B6B6B;
+  box-shadow: 1px 1px 3px 1px #6B6B6B;
+  color: rgb(75, 71, 71);
+}
+.userIcon {
+  margin-right: 5px;
+  color: rgb(75, 71, 71);
+}
+.shadowWrap {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+0,000000+100&0+1,0.65+99 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.65) 99%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+.shadowWrap > p {
+  margin-bottom: -30px !important;
+  display: table;
+  color: white;
+  margin-bottom: -200px !important;
+  padding: 3px 8px 5px 10px;
+  border-radius: 3px 0px 0px 0px;
+  float: right;
+  background: rgb(226, 162, 23);
+  color: rgb(92, 65, 8);
+}
+.calendarIcon {
+  color: rgb(107, 77, 13);
+  margin-right: 5px;
+
+}
+.desc {
+  width: 358px;
+  margin-top: -18px !important;
+  background: #0688c4;
+  border-radius: 0px 0px 5px 5px;
+}
+.desc > p {
+  padding: 10px;
+  font-size: 12px;
+  color: white;
+  text-shadow: #222;
+}
+.desc > p > span {
+  color: #e3f26f;
+  font-weight: bold;
+  display: table;
+  margin-top: 8px;
+  margin-bottom: -15px;
 }
